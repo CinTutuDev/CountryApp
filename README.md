@@ -8,6 +8,23 @@ Proyecto hecho con: [Angular CLI](https://github.com/angular/angular-cli) versio
 
 Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http://localhost:4200/
 
+
+## 📌 Crear Componente y Módulos por comandos
+
+* Módulo:
+  ```
+  ng g m shared
+  ```
+* Componente
+  ```
+  ng g c shared/pages/aboutPage
+  ```
+* Componente sin archivo de prueba y sin hoja de stilos
+  ```
+  ng g c shared/pages/aboutPage --inline-style --skip-tests
+  ```
+    
+
 ## 🛠 Build
 
 Para construir el proyecto `ng build` to build the project. Se almacenarán en la carpeta  `dist/` directory.
