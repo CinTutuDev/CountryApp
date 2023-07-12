@@ -1,18 +1,18 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'shared-searchBox',
   templateUrl: './searchBox.component.html',
 })
-export class SearchBoxComponent implements OnInit {
-
+export class SearchBoxComponent {
   @Input()
-
   public placeholder: string = '';
 
-  constructor() { }
+  @Output()
+  public onValue = new EventEmitter<string>();
 
-  ngOnInit() {
+  emitValue(value: string): void{
+    this.onValue.emit(value)
+
   }
-
 }
