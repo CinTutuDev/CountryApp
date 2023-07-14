@@ -40,6 +40,9 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 ![postmanCapital](https://github.com/CinTutuDev/CountryApp/assets/71487857/490ca5f0-9234-4dbe-9353-1a2641ed967e)
 ![postmanCapitalMuestra](https://github.com/CinTutuDev/CountryApp/assets/71487857/72cf07e4-a093-426b-8278-5e7d3892436e)
 
+* Interfaces<br>
+  Para crear la interfaces copiamos el resultado de la consulta del Postman <br>
+  Nos vamos a VCode, creamos 'country.ts' le damos a paleta de comandos en Paste JSON as Code
 
 
 
