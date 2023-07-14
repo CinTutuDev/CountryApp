@@ -42,9 +42,9 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 
 * Interfaces<br>
   Para crear la interfaces copiamos el resultado de la consulta del Postman <br>
-  Nos vamos a VCode, creamos 'country.ts' le damos a paleta de comandos en Paste JSON as Code
-
-
+  Nos vamos a VCode, creamos 'country.ts' le damos a paleta de comandos en Paste JSON as Code<br>
+* Servicio<br>
+  Creamos contries.service.ts, y con 'a-service-HttpClient' + entre creamos la estructura para el servicio con peticion http
 
 
 
