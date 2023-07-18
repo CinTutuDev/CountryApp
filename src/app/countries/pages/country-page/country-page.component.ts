@@ -1,6 +1,7 @@
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
 import { ContriesService } from '../../services/countries.service';
+import { switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'app-country-page',
@@ -9,19 +10,21 @@ import { ContriesService } from '../../services/countries.service';
 })
 export class CountryPageComponent implements OnInit {
   constructor(
+    private countrieS: ContriesService,
     private route: ActivatedRoute,
-    private countrieS: ContriesService
+    private router: Router
   ) {
     /* const id: Observable<string> = route.params.pipe(map(p => p['id'])); */
   }
 
   ngOnInit(): void {
-    this.route.params.subscribe(({ id }) => {
+    this.route.params
+      .pipe(switchMap(({ id }) => this.countrieS.searchCountryByALphaCode(id)))
+      .subscribe((country) => {
+        if (!country) {return this.router.navigateByUrl('');}
 
-      this.countrieS.searchCountryByALphaCode(id).subscribe(country =>{
-        console.log({country});
-      })
-
-    });
+        console.log('TENEMOS UN PAIS');
+        return;
+      });
   }
 }
