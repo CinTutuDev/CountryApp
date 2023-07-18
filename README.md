@@ -1,15 +1,15 @@
 # <img src="https://img.icons8.com/?size=512&id=oa4PbudmGzeQ&format=png" width="50">CountryApp
 Proyecto hecho con: [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 
-## 🐦 Sitio Web
+ ##  <img src="https://github.com/CinTutuDev/CountryApp/assets/71487857/a2decbc6-4a0c-4968-9a90-e147198ad735" width="20">Sitio Web
 ### Hosting URL:  [TutuGifs](https://tutu-gifs.netlify.app/) 
 
-## 🏍 Servidor
+##  🐦Servidor
 
 Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http://localhost:4200/
 
 
-## 📌 Crear Componente y Módulos por comandos
+##  🎮 Crear Componente y Módulos por comandos
 
 * Módulo:
   ```
@@ -29,11 +29,11 @@ Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http:
 
 Para construir el proyecto `ng build` to build the project. Se almacenarán en la carpeta  `dist/` directory.
 
-## 🎱 URL Importantes
-### Diseño 👉 :  [Bootstrap](https://getbootstrap.com/) 
-### Hosting GitHub 👉  : [AngularComponentBasic](https://cintutudev.github.io/AngularComponentBasic) 
-### API Restcountries  👉 : [Restcountries](https://restcountries.com/) 
-
+##  URL Importantes
+### Diseño  :  [Bootstrap](https://getbootstrap.com/) 
+### Hosting GitHub   : [AngularComponentBasic](https://cintutudev.github.io/AngularComponentBasic) 
+### API Restcountries   : [Restcountries](https://restcountries.com/) 
+### RxJS : [librería Observables](https://rxjs.dev/)
 
 ## 👀 Ejemplo de uso en Postman
 * Por capital:
