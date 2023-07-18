@@ -33,7 +33,7 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 ### Diseño  :  [Bootstrap](https://getbootstrap.com/) 
 ### Hosting GitHub   : [AngularComponentBasic](https://cintutudev.github.io/AngularComponentBasic) 
 ### API Restcountries   : [Restcountries](https://restcountries.com/) 
-
+### RxJS : [librería Observables](https://rxjs.dev/)
 
 ## 👀 Ejemplo de uso en Postman
 * Por capital:
