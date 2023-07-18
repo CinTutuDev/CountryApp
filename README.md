@@ -4,12 +4,12 @@ Proyecto hecho con: [Angular CLI](https://github.com/angular/angular-cli) versio
  ##  <img src="https://github.com/CinTutuDev/CountryApp/assets/71487857/a2decbc6-4a0c-4968-9a90-e147198ad735" width="20">Sitio Web
 ### Hosting URL:  [TutuGifs](https://tutu-gifs.netlify.app/) 
 
-##  Servidor
+##  🐦Servidor
 
 Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http://localhost:4200/
 
 
-##  Crear Componente y Módulos por comandos
+##  🎮 Crear Componente y Módulos por comandos
 
 * Módulo:
   ```
@@ -25,7 +25,7 @@ Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http:
   ```
     
 
-##  Build
+## 🛠 Build
 
 Para construir el proyecto `ng build` to build the project. Se almacenarán en la carpeta  `dist/` directory.
 
@@ -35,7 +35,7 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 ### API Restcountries   : [Restcountries](https://restcountries.com/) 
 
 
-##  Ejemplo de uso en Postman
+## 👀 Ejemplo de uso en Postman
 * Por capital:
 ![postmanCapital](https://github.com/CinTutuDev/CountryApp/assets/71487857/490ca5f0-9234-4dbe-9353-1a2641ed967e)
 ![postmanCapitalMuestra](https://github.com/CinTutuDev/CountryApp/assets/71487857/72cf07e4-a093-426b-8278-5e7d3892436e)
