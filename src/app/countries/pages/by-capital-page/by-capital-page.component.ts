@@ -16,7 +16,7 @@ export class ByCapitalPageComponent {
     this.countriesS.searchCapital(term).subscribe((countries) => {
       this.countries = countries;
     });
-    console.log('Desde ByCapitalPage');
-    console.log({ term });
+    /* console.log('Desde ByCapitalPage');
+    console.log({ term }); */
   }
 }
