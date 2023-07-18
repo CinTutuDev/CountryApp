@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ContriesService } from '../../services/countries.service';
 import { Country } from '../../interfaces/country';
 
+
 @Component({
   selector: 'app-by-capital-page',
   templateUrl: './by-capital-page.component.html',

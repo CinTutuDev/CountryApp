@@ -18,4 +18,12 @@ export class ContriesService {
       tap((countries => console.log('Tap2 countries'))) */
     );
   }
+  searchCountry(query: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/name/${query}`;
+    return this.http.get<Country[]>(url).pipe(catchError(() => of([])));
+  }
+  searchRegion(region: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/region/${region}`;
+    return this.http.get<Country[]>(url).pipe(catchError(() => of([])));
+  }
 }
