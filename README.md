@@ -1,4 +1,4 @@
-# <img src="https://img.icons8.com/?size=512&id=oa4PbudmGzeQ&format=png" width="50">CountryApp
+# <img src="https://img.icons8.com/?size=512&id=oa4PbudmGzeQ&format=png" width="70">CountryApp
 Proyecto hecho con: [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 
  ##  <img src="https://github.com/CinTutuDev/CountryApp/assets/71487857/a2decbc6-4a0c-4968-9a90-e147198ad735" width="20">Sitio Web
