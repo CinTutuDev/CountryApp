@@ -30,10 +30,11 @@ Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http:
 Para construir el proyecto `ng build` to build the project. Se almacenarán en la carpeta  `dist/` directory.
 
 ##  URL Importantes
-### Diseño  :  [Bootstrap](https://getbootstrap.com/) 
-### Hosting GitHub   : [AngularComponentBasic](https://cintutudev.github.io/AngularComponentBasic) 
-### API Restcountries   : [Restcountries](https://restcountries.com/) 
-### RxJS : [librería Observables](https://rxjs.dev/)
+### Diseño:  [Bootstrap](https://getbootstrap.com/) 
+### Hosting GitHub: [AngularComponentBasic](https://cintutudev.github.io/AngularComponentBasic) 
+### API Restcountries: [Restcountries](https://restcountries.com/) 
+### RxJS: [librería Observables](https://rxjs.dev/)
+### Loader: [Loader](https://github.com/Klerith/angular-gif-app/blob/fin-seccion-8/src/assets/loader.svg)
 
 ## 👀 Ejemplo de uso en Postman
 * Por capital:
