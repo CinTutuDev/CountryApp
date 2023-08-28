@@ -1,17 +1,37 @@
+import { CacheStore } from '../interfaces/cache-store.interface';
 import { Country } from '../interfaces/country';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, of, map, delay } from 'rxjs';
+import { Observable, catchError, of, map, delay, tap } from 'rxjs';
+import { Region } from '../interfaces/region.type';
 
 @Injectable({ providedIn: 'root' })
 export class ContriesService {
   private apiUrl: string = 'https://restcountries.com/v3.1';
+  public cacheStore: CacheStore = {
+    byCapital:   { term: '', countries: [] },
+    byCountries: { term: '', countries: [] },
+    byRegion:    { region: '', countries: [] },
+  };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.loadFromLocalStorage();
+    /*  console.log('CountriesServices init'); */
+  }
+
+
+  private saveLocaStorage(){
+    localStorage.setItem('cacheStore', JSON.stringify(this.cacheStore))
+  }
+
+  private loadFromLocalStorage(){
+    if(!localStorage.getItem('cacheStore'))return;
+    this.cacheStore = JSON.parse(localStorage.getItem('cacheStore')!)
+  }
 
   private getCountriesRequest(url: string): Observable<Country[]> {
     return this.http.get<Country[]>(url).pipe(
-      catchError(() => of([])),
+      catchError(() => of([]))
       /* delay(2000) */
     );
   }
@@ -25,16 +45,25 @@ export class ContriesService {
     );
   }
 
-  searchCapital(query: string): Observable<Country[]> {
-    const url = `${this.apiUrl}/capital/${query}`;
-    return this.getCountriesRequest(url);
+  searchCapital(term: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/capital/${term}`;
+    return this.getCountriesRequest(url).pipe(
+      tap(countries => this.cacheStore.byCapital = {term , countries}),
+      tap(()=> this.saveLocaStorage()),
+      tap(()=> this.saveLocaStorage())
+    );
   }
-  searchCountry(query: string): Observable<Country[]> {
-    const url = `${this.apiUrl}/name/${query}`;
-    return this.getCountriesRequest(url);
+  searchCountry(term: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/name/${term}`;
+    return this.getCountriesRequest(url).pipe(
+      tap(countries => this.cacheStore.byCountries = {term , countries})
+    );
   }
-  searchRegion(region: string): Observable<Country[]> {
+  searchRegion(region: Region): Observable<Country[]> {
     const url = `${this.apiUrl}/region/${region}`;
-    return this.getCountriesRequest(url);
+    return this.getCountriesRequest(url).pipe(
+      tap(countries => this.cacheStore.byRegion = {region , countries}),
+      tap(()=> this.saveLocaStorage())
+    );
   }
 }
