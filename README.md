@@ -31,7 +31,7 @@ Para construir el proyecto `ng build` to build the project. Se almacenarán en l
 
 ##  URL Importantes
 ### Diseño:  [Bootstrap](https://getbootstrap.com/) 
-### Tutorial NETLIFY: [PUBLICAR WEB EN NETLIFY](https://www.youtube.com/watch?v=7W6-jSOFMgM) 
+### Tutorial NETLIFY: [Publicar WEB NETLIFY](https://www.youtube.com/watch?v=7W6-jSOFMgM) 
 ### API Restcountries: [Restcountries](https://restcountries.com/) 
 ### RxJS: [librería Observables](https://rxjs.dev/)
 ### Loader: [Loader](https://github.com/Klerith/angular-gif-app/blob/fin-seccion-8/src/assets/loader.svg)
